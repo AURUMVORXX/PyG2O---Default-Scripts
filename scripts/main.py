@@ -100,7 +100,7 @@ def evtCommand(**kwargs):
         PlayerList[pid].toggleSprint()
         
     if (cmd == 'virt'):
-        if (len(params) == 1 and type(params) == int):
+        if (len(params) == 1 and type(params[0]) == int):
             g2o.sendMessageToPlayer(pid, 255, 0, 0, f'Virtual world was set to: {params[0]}')
             g2o.setPlayerVirtualWorld(pid, params[0])
         else:
