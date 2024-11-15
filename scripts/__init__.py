@@ -1,1 +1,2 @@
-import scripts.main
+# import scripts.prototype
+import scripts.mission

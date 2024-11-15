@@ -7,6 +7,9 @@ def evtJoin(**kwargs):
     
     pid = kwargs['playerid']
     
+    if (g2o.isNpc(pid)):
+        return None
+    
     # Stats
     g2o.setPlayerHealth(pid, 1000)
     g2o.setPlayerMaxHealth(pid, 1000)
